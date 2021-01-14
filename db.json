@@ -3,16 +3,23 @@
     {
       "id": 1,
       "message": "Changed network card in server 008",
-      "attention": true,
+      "attention": false,
       "tech": "Sam Smith",
-      "date": "2021-01-14T20:37:17.310Z"
+      "date": "2021-01-14T20:41:52.016Z"
     },
     {
       "id": 3,
       "message": "1122 wireless down",
+      "attention": true,
+      "tech": "John Doe",
+      "date": "2021-01-14T20:41:37.867Z"
+    },
+    {
+      "id": 4,
+      "message": "Done fixed it",
       "attention": false,
       "tech": "Sara Wilson",
-      "date": "2021-01-14T20:37:20.479Z"
+      "date": "2021-01-14T20:42:33.504Z"
     }
   ],
   "techs": [
