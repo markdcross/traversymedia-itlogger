@@ -9,8 +9,8 @@ import TechListModal from './components/techs/TechListModal';
 import { Provider } from 'react-redux';
 import store from './store';
 
-import 'materialize-css/dist/css/materialize.min.css';
-import M from 'materialize-css/dist/js/materialize.min';
+import '@materializecss/materialize/dist/css/materialize.min.css';
+import * as M from '@materializecss/materialize';
 import './App.css';
 
 const App = () => {
