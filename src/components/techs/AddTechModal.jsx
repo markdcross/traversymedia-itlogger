@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { addTech } from '../../actions/techActions';
-import M from 'materialize-css/dist/js/materialize.min';
+import * as M from '@materializecss/materialize';
 
 const AddTechModal = ({ addTech }) => {
   const [firstName, setFirstName] = useState('');
@@ -10,14 +10,14 @@ const AddTechModal = ({ addTech }) => {
 
   const onSubmit = () => {
     if (firstName === '' || lastName === '') {
-      M.toast({ html: 'Please enter the first and last name' });
+      new M.Toast({ text: 'Please enter the first and last name' });
     } else {
       addTech({
         firstName,
         lastName
       });
 
-      M.toast({ html: `${firstName} ${lastName} was added as a tech` });
+      new M.Toast({ text: `${firstName} ${lastName} was added as a tech` });
 
       // Clear fields
       setFirstName('');
